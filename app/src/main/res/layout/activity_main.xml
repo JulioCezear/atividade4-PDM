@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="374dp"
+        android:layout_height="124dp"
+        app:srcCompat="@drawable/calculator_icon_34473" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora do Julio Cézar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Visor -->
+    <EditText
+        android:id="@+id/etVisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:gravity="end"
+        android:inputType="none"
+        android:focusable="false"
+        android:background="#EEEEEE"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Grade de Botões -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3">
+
+        <!-- Linha 1 -->
+        <TableRow>
+            <Button android:text="7" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Button android:text="8" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Button android:text="9" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Button android:text="÷" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <!-- Linha 2 -->
+        <TableRow>
+            <Button android:text="4"/>
+            <Button android:text="5"/>
+            <Button android:text="6"/>
+            <Button android:text="×"/>
+        </TableRow>
+
+        <!-- Linha 3 -->
+        <TableRow>
+            <Button android:text="1"/>
+            <Button android:text="2"/>
+            <Button android:text="3"/>
+            <Button android:text="-"/>
+        </TableRow>
+
+        <!-- Linha 4 -->
+        <TableRow>
+            <Button android:text="0"/>
+            <Button android:text="C"/>
+            <Button android:text="="/>
+            <Button android:text="+"/>
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/r" />
+    </FrameLayout>
+</LinearLayout>
